@@ -3,8 +3,7 @@ class Solution:
         stack=[-1]
         mx_len=0
         for i,ch in enumerate(s):
-            if ch=="(":
-                stack.append(i)
+            if ch=="(":stack.append(i)
             else:
                 stack.pop()
                 if not stack:
