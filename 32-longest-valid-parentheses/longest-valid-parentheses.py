@@ -6,10 +6,8 @@ class Solution:
             if ch=="(":stack.append(i)
             else:
                 stack.pop()
-                if not stack:
-                    stack.append(i)
-                else:
-                    mx_len=max(mx_len,i-stack[-1])
+                if not stack:stack.append(i)
+                else:mx_len=max(mx_len,i-stack[-1])
         return mx_len
 
 
